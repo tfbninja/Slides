@@ -1,0 +1,5 @@
+s21_abstract.Ghost
+s21_abstract.MonsterThree
+s21_abstract.Vampire
+s21_abstract.Witch
+s21_abstract.Monster

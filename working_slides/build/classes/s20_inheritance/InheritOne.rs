@@ -1,0 +1,3 @@
+s20_inheritance.A
+s20_inheritance.B
+s20_inheritance.InheritOne

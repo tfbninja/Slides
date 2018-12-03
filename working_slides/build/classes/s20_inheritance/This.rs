@@ -1,0 +1,2 @@
+s20_inheritance.Monster
+s20_inheritance.This

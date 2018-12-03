@@ -1,0 +1,3 @@
+s20_inheritance.Monster
+s20_inheritance.PubProtPriv
+s20_inheritance.Witch
