@@ -1,3 +1,0 @@
-s20_inheritance.Monster
-s20_inheritance.SuperThis
-s20_inheritance.Skeleton

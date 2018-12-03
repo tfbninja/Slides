@@ -1,4 +1,0 @@
-s21_abstract.Ghost
-s21_abstract.Static
-s21_abstract.Witch
-s21_abstract.Monster

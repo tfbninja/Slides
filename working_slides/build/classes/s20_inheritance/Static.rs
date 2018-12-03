@@ -1,4 +1,0 @@
-s20_inheritance.Static
-s20_inheritance.Monster
-s20_inheritance.Ghost
-s20_inheritance.Witch
