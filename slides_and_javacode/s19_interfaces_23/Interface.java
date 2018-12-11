@@ -1,10 +1,5 @@
 package s19_interfaces_23;
 
-// A+ Computer Science
-// www.apluscompsci.com
-
-//interface example
-
 import static java.lang.System.*;
 
 public class Interface
