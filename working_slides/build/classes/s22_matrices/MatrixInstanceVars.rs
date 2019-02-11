@@ -1,2 +1,0 @@
-s22_matrices.MatrixFun
-s22_matrices.MatrixInstanceVars
