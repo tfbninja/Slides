@@ -7,15 +7,32 @@ package s23_recursion;
 public class recurSimpl {
 
     public static void main(String[] args) {
-        int[] testCases = {1, 2, 3, 4, 5, 6, 2000};
-        int[] answers = {1, 3, 6, 10, 15, 21, 2001000};
-        for (int i = 0; i < testCases.length; i++) {
-            System.out.println("Sum from 1 to " + testCases[i] + " should be " + answers[i] + " and is " + add1ToN(testCases[i]));
-            System.out.println("Sum from 1 to " + testCases[i] + " should be " + answers[i] + " and is " + recurAdd1ToN(testCases[i]));
-            System.out.println("Sum from 1 to " + testCases[i] + " should be " + answers[i] + " and is " + add1ToN2(testCases[i]));
+        /*
+         * int[] testCases = {1, 2, 3, 4, 5, 6, 2000};
+         * int[] answers = {1, 3, 6, 10, 15, 21, 2001000};
+         * for (int i = 0; i < testCases.length; i++) {
+         * System.out.println("Sum from 1 to " + testCases[i] + " should be " +
+         * answers[i] + " and is " + add1ToN(testCases[i]));
+         * System.out.println("Sum from 1 to " + testCases[i] + " should be " +
+         * answers[i] + " and is " + recurAdd1ToN(testCases[i]));
+         * System.out.println("Sum from 1 to " + testCases[i] + " should be " +
+         * answers[i] + " and is " + add1ToN2(testCases[i]));
+         * }
+         */
+        for (int i = 0; i < 10000; i++) {
+            try {
+                sum(i);
+            } catch (java.lang.StackOverflowError e) {
+                System.out.println("fails on " + i);
+                break;
+            }
         }
+
     }
 
+    /*
+     * 1
+     */
     public static int add1ToN(int n) {
         int count = 0;
         for (int i = 1; i <= n; i++) {
@@ -24,6 +41,9 @@ public class recurSimpl {
         return count;
     }
 
+    /*
+     * 2
+     */
     public static int recurAdd1ToN(int n) {
         if (n == 1) {
             return 1;
@@ -31,8 +51,15 @@ public class recurSimpl {
         return n + recurAdd1ToN(n - 1);
     }
 
+    /*
+     * 3
+     */
     public static int add1ToN2(int n) {
-        return n * (n - 1) / 2;
+        return n * (n + 1) / 2;
+    }
+
+    public static int sum(int n) {
+        return n < 2 ? 1 : n + sum(n - 1);
     }
 }
 
