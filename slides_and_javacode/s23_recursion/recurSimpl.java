@@ -7,27 +7,16 @@ package s23_recursion;
 public class recurSimpl {
 
     public static void main(String[] args) {
-        /*
-         * int[] testCases = {1, 2, 3, 4, 5, 6, 2000};
-         * int[] answers = {1, 3, 6, 10, 15, 21, 2001000};
-         * for (int i = 0; i < testCases.length; i++) {
-         * System.out.println("Sum from 1 to " + testCases[i] + " should be " +
-         * answers[i] + " and is " + add1ToN(testCases[i]));
-         * System.out.println("Sum from 1 to " + testCases[i] + " should be " +
-         * answers[i] + " and is " + recurAdd1ToN(testCases[i]));
-         * System.out.println("Sum from 1 to " + testCases[i] + " should be " +
-         * answers[i] + " and is " + add1ToN2(testCases[i]));
-         * }
-         */
-        for (int i = 0; i < 10000; i++) {
-            try {
-                sum(i);
-            } catch (java.lang.StackOverflowError e) {
-                System.out.println("fails on " + i);
-                break;
-            }
-        }
+        System.out.println(go(4));
+        System.out.println(go(5));
+    }
 
+    public static int go(int x) {
+        if (x < 1) {
+            return 1;
+        } else {
+            return x + go(x - 4) + go(x - 1);
+        }
     }
 
     /*
