@@ -1,2 +1,0 @@
-s18_advoop.MonsterOne
-s18_advoop.Monster

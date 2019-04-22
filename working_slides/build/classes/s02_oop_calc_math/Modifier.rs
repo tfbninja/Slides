@@ -1,2 +1,0 @@
-s02_oop_calc_math.Modifier
-s02_oop_calc_math.Sum
